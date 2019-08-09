@@ -1,8 +1,10 @@
 const express = require('express');
-const devController = require('./controllers/DevController');
+const DevController = require('./controllers/DevController');
+const LikeController = require('./controllers/LikeController');
 
 const routes = express.Router();
 
-routes.post('/devs', devController.store);
+routes.post('/devs', DevController.store);
+routes.post('/devs/:devId/likes', LikeController.store);
 
 module.exports = routes;
