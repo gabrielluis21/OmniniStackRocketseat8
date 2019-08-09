@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const devSchema = new Schema({
+const DevSchema = new Schema({
     name:{
         type: String,
         required: true
