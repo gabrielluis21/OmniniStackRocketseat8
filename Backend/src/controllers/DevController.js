@@ -1,5 +1,5 @@
 const axios = require('axios');
-const Dev = require('../models/Dev');
+const Dev = require('../models/Dev').default;
 
 module.exports = {
 
